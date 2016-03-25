@@ -11,50 +11,80 @@
     android:background="@drawable/xana">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:weightSum="1">
 
-        <Button
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:text="Desculpah"
-            android:id="@+id/Desculpahbutton"
-            android:layout_gravity="center_horizontal|right"
-            android:onClick="PlayMusicDesculpah" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:gravity="bottom">
 
-        <Button
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:text="Paxourah"
-            android:id="@+id/Paxourahbutton"
-            android:layout_gravity="center_horizontal|right"
-            android:onClick="PlayMusicPaxourah" />
+            <VideoView
+                android:id="@+id/cabraVideoView"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
 
-        <Button
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:text="Enfeim"
-            android:id="@+id/Enfeimbutton"
-            android:layout_gravity="center_horizontal|right"
-            android:onClick="PlayMusicEnfeim" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true">
 
-        <Button
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:text="bora po omega"
-            android:id="@+id/borabutton"
-            android:layout_gravity="center_horizontal|right"
-            android:onClick="PlayMusicBora" />
+            <Button
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="Desculpah"
+                android:id="@+id/Desculpahbutton"
+                android:layout_gravity="center_horizontal|right"
+                android:onClick="PlayMusicDesculpah" />
 
-        <Button
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:text="Cu Nouje"
-            android:id="@+id/CuNoujebutton"
-            android:layout_gravity="right"
-            android:onClick="PlayMusicCuNouje" />
+            <Button
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="Paxourah"
+                android:id="@+id/Paxourahbutton"
+                android:layout_gravity="center_horizontal|right"
+                android:onClick="PlayMusicPaxourah" />
+
+            <Button
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="Enfeim"
+                android:id="@+id/Enfeimbutton"
+                android:layout_gravity="center_horizontal|right"
+                android:onClick="PlayMusicEnfeim" />
+
+            <Button
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="bora po omegle"
+                android:id="@+id/borabutton"
+                android:layout_gravity="center_horizontal|right"
+                android:onClick="PlayMusicBora" />
+
+            <Button
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="Cu Nouje"
+                android:id="@+id/CuNoujebutton"
+                android:layout_gravity="right"
+                android:onClick="PlayMusicCuNouje" />
+
+            <Button
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="Play Again!"
+                android:id="@+id/cabrabutton"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>
